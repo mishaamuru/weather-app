@@ -1,8 +1,11 @@
-function CurrentWeather() {
+function CurrentWeather(props) {
+
+    if (!props.data) return <div>Loading ...</div>
 
     return (
         <div>
-            Current Weather
+            {props.data.name}
+            {props.data.main.temp}
         </div>
     )
 }
