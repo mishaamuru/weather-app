@@ -22,6 +22,7 @@ function App() {
       .then(data => {
         setForecastData(data)
         console.log(data)
+        console.log(forecastData?.list[0].pop)
       })
   }
 

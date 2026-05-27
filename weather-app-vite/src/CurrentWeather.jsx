@@ -6,16 +6,23 @@ function CurrentWeather(props) {
 
     return (
         <div className="current-weather">
-            <h1 className="city-name">{props.data.name}</h1>
-            <p className="date">{new Date().toLocaleDateString('en-US',
-                {
-                    weekday: 'long',
-                    month: 'long',
-                    day: 'numeric'
-                })
-            }</p>
-            <p className="temperature">{Math.round(props.data.main.temp)}°</p>
-            <p className="descriptions">{props.data.weather[0].main}</p>
+            <div className='name-and-date'>
+                <p className="city-name">{props.data.name}, {props.data.sys.country}</p>
+                <p className="date">{new Date().toLocaleDateString('en-US',
+                    {
+                        weekday: 'long',
+                        month: 'long',
+                        day: 'numeric'
+                    })
+                }</p>
+            </div>
+            <div className='weather-now'>
+                <img src={`https://openweathermap.org/img/wn/${props.data.weather[0].icon}@2x.png`} alt="weather icon" />
+                <div className='temp-now'>
+                    <span className="temperature">{Math.round(props.data.main.temp)}°</span>
+                    <span className="descriptions">{props.data.weather[0].description}</span>
+                </div>
+            </div>
 
             <div className='high-low-row'>
                 <p className="high-temperature">High: {Math.round(props.data.main.temp_max)}°C

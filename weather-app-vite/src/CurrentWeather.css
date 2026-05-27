@@ -2,14 +2,14 @@
   background: linear-gradient(to top left, var(--current-temp-bg), var(--current-temp-bg2));
   border-radius: 24px;
   width: 90%;
-  max-width: 900px;
+  max-width: 800px;
   text-align: center;
   padding: 32px 32px 40px 32px;
 }
 
 .temperature {
     font-weight: 700;
-    font-size: 4rem;
+    font-size: 5rem;
 }
 
 .high-low-row {
@@ -76,4 +76,46 @@
 .stat-value {
     font-weight: 600;
     font-size: 1.3rem;
+}
+
+.weather-now {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: -30px;
+}
+
+.temp-now {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.weather-now img {
+    width: 100px;
+    height: 100px;
+}
+
+.descriptions {
+    margin-top: -20px;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 200;
+    font-size: 1.2rem;
+}
+
+.name-and-date {
+    display: flex;
+    flex-direction: column;
+    font-weight: 200;
+    text-align: left;
+}
+
+.city-name {
+    font-size: 1.8rem;
+}
+
+.date {
+    margin-top: -25px;
 }
