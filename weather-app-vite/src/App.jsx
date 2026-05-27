@@ -28,7 +28,6 @@ function App() {
 
   return (
     <div className="parent">
-      Weather App
       <br />
       <input type="text" placeholder="Search City" value={city} onChange={(e) => setCity(e.target.value)} />
       <button onClick={handleSearch}>Search</button>
