@@ -32,7 +32,7 @@ function App() {
       <input type="text" placeholder="Search City" value={city} onChange={(e) => setCity(e.target.value)} />
       <button onClick={handleSearch}>Search</button>
       <CurrentWeather data={weatherData} rain={forecastData?.list[0].pop} />
-      <HourlyForecast data={forecastData} />
+      <HourlyForecast data={forecastData} current={weatherData} timezone={weatherData?.timezone} />
       <WeeklyForecast data={forecastData} />
     </div>
   )
