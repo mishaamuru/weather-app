@@ -28,9 +28,10 @@ function App() {
 
   return (
     <div className="parent">
-      <br />
-      <input type="text" placeholder="Search City" value={city} onChange={(e) => setCity(e.target.value)} />
-      <button onClick={handleSearch}>Search</button>
+      <div className='search'>
+        <input className='bar' type="text" placeholder="Search City" value={city} onChange={(e) => setCity(e.target.value)} />
+        <button className="button" onClick={handleSearch}>Search</button>
+      </div>
       <CurrentWeather data={weatherData} rain={forecastData?.list[0].pop} />
       <HourlyForecast data={forecastData} current={weatherData} timezone={weatherData?.timezone} />
       <WeeklyForecast data={forecastData} />

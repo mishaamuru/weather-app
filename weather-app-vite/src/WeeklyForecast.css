@@ -1,0 +1,43 @@
+.weekly-temp {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    max-width: 800px;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 24px;
+    padding: 16px 16px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+.weekly-item {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 8px 0;
+}
+
+.weekly-item:last-child {
+    border-bottom: none;
+}
+
+.weekly-item img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.weekly-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.weekly-day {
+    width: 40px;
+}

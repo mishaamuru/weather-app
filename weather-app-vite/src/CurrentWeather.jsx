@@ -17,7 +17,7 @@ function CurrentWeather(props) {
                 }</p>
             </div>
             <div className='weather-now'>
-                <img src={`https://openweathermap.org/img/wn/${props.data.weather[0].icon}@2x.png`} alt="weather icon" />
+                <img src={`https://openweathermap.org/img/wn/${props.data.weather[0].icon.replace('n', 'd')}@2x.png`} alt="weather icon" />
                 <div className='temp-now'>
                     <span className="temperature">{Math.round(props.data.main.temp)}°</span>
                     <span className="descriptions">{props.data.weather[0].description}</span>

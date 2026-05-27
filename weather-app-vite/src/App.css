@@ -1,0 +1,40 @@
+.search {
+    display: flex;
+    flex-direction: row;
+    padding: 12px;
+    gap: 8px;
+    width: 90%;
+    max-width: 800px;
+    margin-bottom: 10px;
+}
+
+.bar {
+    flex: 1;
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: none;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    outline: none;   
+}
+
+.bar::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.button {
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: none;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
