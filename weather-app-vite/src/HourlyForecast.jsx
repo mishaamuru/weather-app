@@ -1,7 +1,7 @@
 function HourlyForecast(props) {
     if (!props.data) return <div>Loading ...</div>
     return (
-        <div>
+        <div className="hourly-temp">
         {
             props.data.list.slice(0, 5).map((item) => (
                 <div key={item.dt}>
