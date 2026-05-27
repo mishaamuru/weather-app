@@ -2,6 +2,8 @@
   --text: #ffffff;
   --bg: #6ea8f1;
   --current-temp-bg: #001b4d;
+  --current-temp-bg2: #5185c7;
+  --current-temp-stats: #0a2859;
 }
 
 body {
